@@ -1,14 +1,15 @@
 # Parse Base64 Image
-Parse base64 image from HTML rich text editor input. This package use
+Parse base64 image from HTML rich text editor input.
 
 ## Install
+[yarn: _parse-base64-image_](https://yarnpkg.com/package/parse-base64-image)
+```
+yarn add parse-base64-image
+```
+
 [npm: _parse-base64-image_](https://www.npmjs.com/package/parse-base64-image)
 ```
 npm install parse-base64-image
-```
-
-```
-yarn add parse-base64-image
 ```
 
 ## Example
@@ -31,6 +32,9 @@ sure that rich editor provide the data-filename dataset like
 ```<img src="http://example.png" data-filename="example.png"/>```
 
 ### Test
+Using yarn:
+```yarn test```
+or using npm:
 ```npm run test```
 
 ## API
