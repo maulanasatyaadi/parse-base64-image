@@ -1,0 +1,39 @@
+{
+  "name": "parse-base64-image",
+  "description": "Parse base64 image from HTML input then put the image on the file system",
+  "version": "1.0",
+  "type": "module",
+  "author": {
+    "name": "Maulana Satya Adi",
+    "email": "maulanasatyaadi@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "jsdom": "^16.5.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.4",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.11.0",
+    "@babel/plugin-transform-runtime": "^7.11.5",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-typescript": "^7.10.4",
+    "@types/jest": "^26.0.23",
+    "@types/jsdom": "^16.2.10",
+    "jest": "^26.6.3",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4"
+  },
+  "scripts": {
+    "build": "babel ./src --out-dir dist --extensions '.ts' --source-maps && tsc -d src/ParseBase64Image.ts --outDir dist/ --esModuleInterop",
+    "test": "jest",
+    "prepare": "npm run-script build"
+  },
+  "main": "dist/ParseBase64Image.js",
+  "types": "dist/ParseBase64Image.d.ts",
+  "files": [
+    "dist/ParseBase64Image.js",
+    "dist/ParseBase64Image.d.ts"
+  ]
+}
