@@ -7,6 +7,10 @@ Parse base64 image from HTML rich text editor input. This package use
 npm install parse-base64-image
 ```
 
+```
+yarn add parse-base64-image
+```
+
 ## Example
 ```js
 import fs from 'fs'
