@@ -15,7 +15,7 @@ import ParseBase64Image from "parse-base64-image"
 
 const HTMLInput = fs.readFileSync(path.join(__dirname, 'input.html'))
 
-ParseBase64Image(HTMLInput, path.join(__dirname, './'), '/').then(HTMLOutput => {
+ParseBase64Image(HTMLInput.toString('utf-8'), path.join(__dirname, './'), '/').then(HTMLOutput => {
   console.log(HTMLOutput)
 })
 ```
