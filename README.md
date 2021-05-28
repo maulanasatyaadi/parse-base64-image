@@ -34,11 +34,12 @@ sure that rich editor provide the data-filename dataset like
 ### Test
 Using yarn:
 ```yarn test```
+
 or using npm:
 ```npm run test```
 
 ## API
-### `ParseBase64Image(HTMLContent: string, localPath: string, publicPath: string)`
+### `ParseBase64Image(HTMLContent: string, localPath: string, publicPath: string): Promise<string>`
 - `HTMLContent`: _required_. HTML input string
 - `localPath`: _required_. Local path where is file will be saved
 - `publicPath`: _required_. Public path that accessible from public url
